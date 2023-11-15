@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+
+/* General settings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: #211f1f;
+  font-weight: 400;
+  background-color: #f0debd;
+  border-bottom: 1.5rem solid #e6c452;
+  min-height: 100vh;
+  padding: 3rem;
+  padding-bottom: 5.9rem;
+}
+
+/* Elements*/
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header {
+  align-self: stretch;
+}
+
+.header h1 {
+  color: #0537ed;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 450;
+  letter-spacing: 2px;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu h2 {
+  padding: 0.5rem 0;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  font-size: 2rem;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 550;
+}
+
+.menu > p {
+  font-size: 1.6rem;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 1.6;
+  width: 80%;
+}
+
+.dishes {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.dish {
+  display: flex;
+  gap: 2rem;
+}
+
+.dish img {
+  width: 13rem;
+  aspect-ratio: 1;
+  align-self: start;
+}
+
+.dish div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.1rem 0;
+}
+
+.dish h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.dish p {
+  font-size: 1.15rem;
+  font-weight: 450;
+  font-style: italic;
+  margin-bottom: auto;
+}
+
+.dish span {
+  display: block;
+  font-size: 1.8rem;
+}
+
+.dish.sold-out {
+  color: #888;
+}
+
+.dish.sold-out img {
+  filter: grayscale();
+  opacity: 0.8;
+}
+
+.footer {
+  font-size: 1.5rem;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.order > p {
+  font-size: 1.28rem;
+}
+
+.btn {
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 450;
+  background-color: #f3bc09;
+  padding: 1.35rem 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #dfad0a;
+}
