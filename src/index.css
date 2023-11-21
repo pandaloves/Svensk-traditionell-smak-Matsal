@@ -110,7 +110,7 @@ body {
 .dish span {
   display: block;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 680;
 }
 
 .dish.sold-out {
