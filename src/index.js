@@ -7,56 +7,48 @@ const dishList = [
     name: "Köttbullar med potatis och lingonsås",
     ingredients: "Nötkött, lök, ägg, mjölk och ströbröd",
     price: "109 kr",
-    photoName: "public/img/Meatballs.jpg",
     soldOut: false,
   },
   {
     name: "Räkmacka",
     ingredients: "Sallad, majonnäs, ägg, dill, kaviar och räkor",
     price: "139 kr",
-    photoName: "public/img/Shrimp Sandwich.jpg",
     soldOut: false,
   },
   {
     name: " Ärtsoppa & Pannkakor",
     ingredients: "Torkade ärtor, fläskbuljong, kryddad,fläskbitar och senap",
     price: "109 kr",
-    photoName: "public/img/Pea Soup & Pancakes.jpg",
     soldOut: false,
   },
   {
     name: "Smörgåstårta",
     ingredients: "Majonnäs, ägg, paté, kött och grönsaker",
     price: "219 kr",
-    photoName: "public/img/Swedish Sandwich Cake.jpg",
     soldOut: false,
   },
   {
     name: "Pytt i Panna ",
     ingredients: "Potatis, lök och fläsk",
     price: "109 kr",
-    photoName: "public/img/Pyttipanna Swedish Hash.jpg",
     soldOut: false,
   },
   {
     name: "Kalops",
     ingredients: "Nötkött, potatis, lök, kryddpeppar och lagerblad",
     price: "109 kr",
-    photoName: "public/img/Kalops.jpg",
     soldOut: true,
   },
   {
     name: "Toast Skagen",
     ingredients: "Räkor, majonnäs och gräddfil",
     price: "119 kr",
-    photoName: "public/img/Toast Skagen.jpg",
     soldOut: false,
   },
   {
     name: "Inlagd sill",
     ingredients: "Vatten, stark vinäger, salt, kryddor, potatis och gräslök",
     price: "109 kr",
-    photoName: "public/img/Pickled herring.jpg",
     soldOut: false,
   },
 ];
@@ -92,7 +84,6 @@ function Menu() {
       {numDishes > 0 ? (
         <>
           <p>Den klassiska svenska maten</p>
-
           <ul className="dishes">
             {dishes.map((dish) => (
               <Dish dishObj={dish} key={dish.name} />
@@ -109,7 +100,6 @@ function Menu() {
 function Dish({ dishObj }) {
   return (
     <li className={`dish ${dishObj.soldOut ? "sold-out" : ""}`}>
-      <img src={dishObj.photoName} alt={dishObj.name} />
       <div>
         <h3>{dishObj.name}</h3>
         <p>{dishObj.ingredients}</p>
