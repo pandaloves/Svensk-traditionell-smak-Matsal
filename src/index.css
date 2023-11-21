@@ -87,12 +87,6 @@ body {
   gap: 2rem;
 }
 
-.dish img {
-  width: 13rem;
-  aspect-ratio: 1;
-  align-self: start;
-}
-
 .dish div {
   display: flex;
   flex-direction: column;
@@ -103,11 +97,12 @@ body {
 .dish h3 {
   font-size: 2rem;
   font-weight: 400;
+  color: #0537ed;
 }
 
 .dish p {
   font-size: 1.15rem;
-  font-weight: 450;
+  font-weight: 600;
   font-style: italic;
   margin-bottom: auto;
 }
@@ -115,15 +110,11 @@ body {
 .dish span {
   display: block;
   font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .dish.sold-out {
   color: #888;
-}
-
-.dish.sold-out img {
-  filter: grayscale();
-  opacity: 0.8;
 }
 
 .order {
@@ -135,6 +126,7 @@ body {
 
 .order > p {
   font-size: 1.28rem;
+  font-weight: 500;
 }
 
 .btn {

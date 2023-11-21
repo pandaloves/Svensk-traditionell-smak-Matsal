@@ -109,12 +109,12 @@ function Dish({ dishObj }) {
   );
 }
 
-function Order({ closeHour, openHour }) {
+function Order() {
   return (
     <div className="order">
       <p>
-        Vi har öppet från {openHour}:00 till {closeHour}:30, Tis - Lör. Kom och
-        besök oss eller beställ online.
+        Vi har öppet från 11:00 till 22:30, Tis - Lör. Kom och besök oss eller
+        beställ online.
       </p>
       <button className="btn">Beställ</button>
       <p>&#128222; 08-587 220 80</p>
