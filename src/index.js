@@ -12,13 +12,13 @@ const dishList = [
   {
     name: "Räkmacka",
     ingredients: "Sallad, majonnäs, ägg, dill, kaviar och räkor",
-    price: "139 kr",
+    price: "129 kr",
     soldOut: false,
   },
   {
     name: " Ärtsoppa & Pannkakor",
     ingredients: "Torkade ärtor, fläskbuljong, kryddad,fläskbitar och senap",
-    price: "109 kr",
+    price: "119 kr",
     soldOut: false,
   },
   {
