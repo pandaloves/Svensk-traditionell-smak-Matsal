@@ -5,62 +5,58 @@ import "./index.css";
 const dishList = [
   {
     name: "Köttbullar med potatis och lingonsås",
-    ingredients: "Fläsk eller nötkött, lök, ägg, mjölk och ströbröd",
+    ingredients: "Nötkött, lök, ägg, mjölk och ströbröd",
     price: "109 kr",
-    photoName: "img/Meatballs.jpg",
+    photoName: "public/img/Meatballs.jpg",
     soldOut: false,
   },
   {
     name: "Räkmacka",
-    ingredients:
-      "Sallad, majonnäs, ägg, dill, kaviar och en generös mängd räkor",
+    ingredients: "Sallad, majonnäs, ägg, dill, kaviar och räkor",
     price: "139 kr",
-    photoName: "img/Shrimp Sandwich.jpg",
+    photoName: "public/img/Shrimp Sandwich.jpg",
     soldOut: false,
   },
   {
     name: " Ärtsoppa & Pannkakor",
-    ingredients:
-      "Torkade gula ärtor och fläskbuljong, kryddad med timjan och toppad med salta fläskbitar och senap",
+    ingredients: "Torkade ärtor, fläskbuljong, kryddad,fläskbitar och senap",
     price: "109 kr",
-    photoName: "img/Pea Soup & Pancakes.jpg",
+    photoName: "public/img/Pea Soup & Pancakes.jpg",
     soldOut: false,
   },
   {
     name: "Smörgåstårta",
-    ingredients:
-      "Majonnäs, ägg, paté eller krämiga blandningar, och sedan dekorerad med kött och grönsaker",
+    ingredients: "Majonnäs, ägg, paté, kött och grönsaker",
     price: "219 kr",
-    photoName: "img/Swedish Sandwich Cake.jpg",
+    photoName: "public/img/Swedish Sandwich Cake.jpg",
     soldOut: false,
   },
   {
     name: "Pytt i Panna ",
     ingredients: "Potatis, lök och fläsk",
     price: "109 kr",
-    photoName: "img/Pyttipanna Swedish Hash.jpg",
+    photoName: "public/img/Pyttipanna Swedish Hash.jpg",
     soldOut: false,
   },
   {
     name: "Kalops",
-    ingredients: "Nötkött med potatis, lök, kryddpeppar och lagerblad",
+    ingredients: "Nötkött, potatis, lök, kryddpeppar och lagerblad",
     price: "109 kr",
-    photoName: "img/Kalops.jpg",
+    photoName: "public/img/Kalops.jpg",
     soldOut: true,
   },
   {
     name: "Toast Skagen",
     ingredients: "Räkor, majonnäs och gräddfil",
     price: "119 kr",
-    photoName: "img/Toast Skagen.jpg",
+    photoName: "public/img/Toast Skagen.jpg",
     soldOut: false,
   },
   {
     name: "Inlagd sill",
-    ingredients:
-      "Vatten, stark vinäger, salt, kryddor med kokt potatis och ringlad med gräddfil och hackad gräslök",
+    ingredients: "Vatten, stark vinäger, salt, kryddor, potatis och gräslök",
     price: "109 kr",
-    photoName: "img/Pickled herring.jpg",
+    photoName: "public/img/Pickled herring.jpg",
     soldOut: false,
   },
 ];
@@ -70,7 +66,6 @@ function App() {
     <div className="container">
       <Header />
       <Menu />
-      <Footer />
       <Order />
     </div>
   );
@@ -96,7 +91,7 @@ function Menu() {
 
       {numDishes > 0 ? (
         <>
-          <p>Den klassiska svenska maten.</p>
+          <p>Den klassiska svenska maten</p>
 
           <ul className="dishes">
             {dishes.map((dish) => (
@@ -121,24 +116,6 @@ function Dish({ dishObj }) {
         <span>{dishObj.soldOut ? "SOLD OUT" : dishObj.price}</span>
       </div>
     </li>
-  );
-}
-
-function Footer() {
-  const hour = new Date().getHours();
-  const openHour = 11;
-  const closeHour = 22;
-  const open = hour >= openHour && hour <= closeHour;
-  return (
-    <footer className="footer">
-      {open ? (
-        <Order closeHour={closeHour} openHour={openHour} />
-      ) : (
-        <p>
-          Välkomna mellan {openHour}:00 and {closeHour}:30, Tis - Lör.
-        </p>
-      )}
-    </footer>
   );
 }
 
