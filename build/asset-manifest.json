@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Svensk-traditionell-smak-Matsal/static/css/main.bdcc2fad.css",
-    "main.js": "/Svensk-traditionell-smak-Matsal/static/js/main.113e8037.js",
+    "main.css": "/Svensk-traditionell-smak-Matsal/static/css/main.6780342f.css",
+    "main.js": "/Svensk-traditionell-smak-Matsal/static/js/main.dc5e9730.js",
     "index.html": "/Svensk-traditionell-smak-Matsal/index.html",
-    "main.bdcc2fad.css.map": "/Svensk-traditionell-smak-Matsal/static/css/main.bdcc2fad.css.map",
-    "main.113e8037.js.map": "/Svensk-traditionell-smak-Matsal/static/js/main.113e8037.js.map"
+    "main.6780342f.css.map": "/Svensk-traditionell-smak-Matsal/static/css/main.6780342f.css.map",
+    "main.dc5e9730.js.map": "/Svensk-traditionell-smak-Matsal/static/js/main.dc5e9730.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdcc2fad.css",
-    "static/js/main.113e8037.js"
+    "static/css/main.6780342f.css",
+    "static/js/main.dc5e9730.js"
   ]
 }
